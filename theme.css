@@ -247,6 +247,84 @@ a[data-role="button"]:hover,
     background: rgba(var(--dark), 0.1);
 }
 
+
+/* --- PHASE 2: DASHBOARD & PLUGIN FIXES --- */
+
+/* Force a solid light background for the main content area */
+.mainAnimatedPages .content-primary {
+    background-color: rgb(var(--accent-off)) !important;
+}
+
+/* Fix faded text and icons throughout the dashboard */
+.mainAnimatedPages .content-primary,
+.mainAnimatedPages .content-primary h1,
+.mainAnimatedPages .content-primary h2,
+.mainAnimatedPages .content-primary h3,
+.mainAnimatedPages .content-primary p,
+.mainAnimatedPages .content-primary .listItem,
+.mainAnimatedPages .content-primary .emby-tab-button,
+.mainAnimatedPages .content-primary .inputLabel,
+.mainAnimatedPages .content-primary a {
+    color: rgb(var(--dark)) !important;
+    text-shadow: none !important;
+    opacity: 1 !important;
+}
+
+/* Style the content boxes (like "Default User Settings") with the neobrutalist look */
+.mainAnimatedPages .paperList {
+    background: rgb(var(--white)) !important;
+    border: var(--border-width) solid rgb(var(--dark)) !important;
+    box-shadow: var(--sharp-shadow) !important;
+    border-radius: var(--rounding-large) !important;
+    padding: 1.5em;
+    margin-bottom: 2em;
+    /* Add some space between the boxes */
+}
+
+/* Fix the black input fields */
+.mainAnimatedPages .emby-input,
+.mainAnimatedPages .emby-select,
+.mainAnimatedPages .emby-textarea {
+    background-color: rgb(var(--white)) !important;
+    border: var(--border-width) solid rgb(var(--dark)) !important;
+    color: rgb(var(--dark)) !important;
+}
+
+.mainAnimatedPages .emby-input:focus,
+.mainAnimatedPages .emby-select:focus {
+    border-color: rgb(255, 121, 198) !important;
+    /* Use a different accent for focus if you like */
+}
+
+/* Fix the selected sidebar item to be more readable */
+.mainDrawer .navMenuOption-selected {
+    background: rgb(var(--accent)) !important;
+    color: rgb(var(--dark)) !important;
+    border-radius: var(--rounding) !important;
+}
+
+/* Fix dashboard tabs to make them visible again */
+#pluginsPage .emby-tab-button {
+    color: rgba(var(--dark), 0.6) !important;
+    font-weight: 700;
+}
+
+#pluginsPage .emby-tab-button-active {
+    color: rgb(var(--dark)) !important;
+    border-bottom: var(--border-width) solid rgb(var(--dark)) !important;
+}
+
+#pluginsPage .emby-tab-button:hover {
+    background: transparent !important;
+    color: rgb(var(--dark)) !important;
+}
+
+/* Remove weird transparent borders */
+fieldset {
+    border-color: transparent !important;
+}
+
+
 @import url("https://cdn.jsdelivr.net/gh/stpnwf/ZestyTheme@latest/colorschemes/cyan.css");
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
 
