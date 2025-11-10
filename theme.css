@@ -50,6 +50,8 @@ imgLogoIcon,
 .pageTitleWithLogo {
     content: url(https://i.imgur.com/xdMtmGy.png) !important;
     background-image: url(https://i.imgur.com/xdMtmGy.png) !important;
+    width: 100% !important;
+    height: auto !important;
 }
 
 
@@ -265,7 +267,7 @@ a[data-role="button"]:hover,
 .mainAnimatedPages .content-primary .emby-tab-button,
 .mainAnimatedPages .content-primary .inputLabel,
 .mainAnimatedPages .content-primary a {
-    color: rgb(var(--dark)) !important;
+    color: #454545 !important;
     text-shadow: none !important;
     opacity: 1 !important;
 }
